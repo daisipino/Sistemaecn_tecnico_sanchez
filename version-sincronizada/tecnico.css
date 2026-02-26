@@ -17,6 +17,24 @@ header {
   color: white;
   padding: 15px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+  transform: skewX(-25deg);
+  animation: tech-slide 10s infinite alternate;
+}
+
+@keyframes tech-slide {
+  to { left: 150%; }
 }
 
 main {

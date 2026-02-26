@@ -15,40 +15,58 @@ body {
 
 /* encabezado */
 header {
+  /* keep text centered and give some padding for breathing room */
   text-align: center;
   padding: 25px 10px;
-  background: #fff; /* blanco para integrarse con la parte blanca */
   position: relative;
+  /* instead of a fixed white block, let the page color show through
+     and animate a translucent white shape for dynamismo */
+  background: var(--color-fondo);
+  overflow: hidden;
+}
+
+/* animación de barra blanca diagonal que se desliza
+   juega con el fondo gris y el blanco que pedía el usuario */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;               /* arranca fuera a la izquierda */
+  width: 150%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: skewX(-20deg);
+  animation: slide-white 8s infinite alternate;
+}
+
+@keyframes slide-white {
+  to { left: 120%; }
 }
 
 /* nombre empresa */
+/* título grande de la empresa
+   ya no tiene fondo blanco fijo, se apoya en la animación
+   y está completamente centrado como bloque */
 .empresa {
-  text-align: center;
+  display: block;
   font-size: 100px;
-  color: #000000;
+  color: #000;
   font-weight: 900;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 auto;
   font-family: Georgia, serif;
-  background: rgba(255,255,255,0.8);
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
 /* subtitulo */
+/* subtítulo colocado en bloque, debajo del nombre */
 .subtitulo {
-  text-align: center;
+  display: block;
   color: #444;
-  margin-top: 8px;
+  margin: 8px auto 0;
   font-size: 24px;
   font-weight: 300;
   font-family: Arial, sans-serif;
   letter-spacing: 0.5px;
-  background: rgba(255,255,255,0.6);
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 6px;
 }
 
 /* contenedor */

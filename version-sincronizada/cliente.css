@@ -17,38 +17,49 @@ body {
 header {
   text-align: center;
   padding: 25px 10px;
-  background: #fff;
   position: relative;
+  background: var(--color-fondo);
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 150%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: skewX(-20deg);
+  animation: slide-white 8s infinite alternate;
+}
+
+@keyframes slide-white {
+  to { left: 120%; }
 }
 
 /* nombre empresa */
+/* nombre empresa */
 .empresa {
-  text-align: center;
+  display: block;
   font-size: 100px;
-  color: #000000;
+  color: #000;
   font-weight: 900;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 auto;
   font-family: Georgia, serif;
-  background: rgba(255,255,255,0.8);
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
 /* subtitulo */
+/* subtitulo */
 .subtitulo {
-  text-align: center;
+  display: block;
   color: #444;
-  margin-top: 8px;
+  margin: 8px auto 0;
   font-size: 24px;
   font-weight: 300;
   font-family: Arial, sans-serif;
   letter-spacing: 0.5px;
-  background: rgba(255,255,255,0.6);
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 6px;
 }
 
 /* contenedor */
@@ -209,10 +220,6 @@ select:hover {
 
 /* resultado */
 #resultado {
-  margin-top: 15px;
-  font-weight: bold;
-  color: var(--color-principal);
-}
 
 .titulo-tabla {
   margin-top: 25px;
@@ -286,5 +293,14 @@ select {
 
   .portada {
     height: 260px;
+.subtitulo {
+  display: block;
+  color: #444;
+  margin: 8px auto 0;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
   }
 }
