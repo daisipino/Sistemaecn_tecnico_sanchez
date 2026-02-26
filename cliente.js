@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     else if (tipo === "Reparación") costo = 35000;
     else costo = "A convenir";
 
-    // muestro mensaje de resultado
+    // muestro mensaje de resultado, con aviso de sujeto a evaluación
     resultado.innerHTML =
       "Gracias " +
       cliente +
@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
       tipo +
       ": $" +
       costo +
-      ". El técnico confirmará el precio final.";
+      ". El técnico confirmará el precio final. " +
+      "Este monto es meramente estimado y está sujeto a evaluación técnica, " +
+      "podría modificarse una vez revisado el equipo.";
 
     // agrego la solicitud al arreglo
     solicitudes.push({
