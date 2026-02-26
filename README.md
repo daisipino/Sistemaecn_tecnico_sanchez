@@ -25,7 +25,7 @@ Instituto de Educación Superior (IES)
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ### Archivos Clave
 
@@ -70,7 +70,7 @@ Instituto de Educación Superior (IES)
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### HTML5
 - Estructura semántica correcta
@@ -103,7 +103,7 @@ Instituto de Educación Superior (IES)
 
 ---
 
-## 🚀 Instrucciones de Uso
+## Instrucciones de Uso
 
 ### Requisitos Previos
 - Navegador web moderno (Chrome, Firefox, Safari, Edge)
@@ -159,9 +159,9 @@ http-server
    - Mensaje/Comentario describiendo el problema
    
 2. Marca las casillas que correspondan:
-   - ✓ Es urgente
-   - ✓ Tengo garantía
-   - ✓ Quiero presupuesto antes de venir
+   - Es urgente
+   - Tengo garantía
+   - Quiero presupuesto antes de venir
 
 3. Haz clic en **"Enviar solicitud y calcular costo"**
 
