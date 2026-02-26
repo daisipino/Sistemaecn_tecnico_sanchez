@@ -1,0 +1,107 @@
+:root {
+  --color-principal: #1f4e79;
+  --color-fondo: #f4f6f9;
+  --color-blanco: white;
+  --color-borde: #ccc;
+  --color-reset: #777;
+}
+
+body {
+  font-family: Arial, sans-serif, serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+  transform: skewX(-25deg);
+  animation: tech-slide 10s infinite alternate;
+}
+
+@keyframes tech-slide {
+  to { left: 150%; }
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: var(--color-blanco);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--color-borde);
+  padding: 8px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="reset"] {
+  background-color: var(--color-reset);
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #163a5a;
+}
+
+.btn-convertir {
+  background-color: #27ae60;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-convertir:hover {
+  background-color: #229954;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
