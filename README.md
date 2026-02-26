@@ -208,43 +208,14 @@ http-server
 
 ## Contribuciones
 
-Si deseas contribuir a este proyecto:
+Para contribuir:
 
-### Paso 1: Fork del Repositorio
-1. Ve a [GitHub](https://github.com/daisipino/Sistemaecn_tecnico_sanchez)
-2. Haz clic en el botón **"Fork"** en la esquina superior derecha
-3. Se creará una copia del proyecto en tu cuenta
-
-### Paso 2: Clonar tu Fork
-```bash
-git clone https://github.com/TU_USUARIO/Sistemaecn_tecnico_sanchez.git
-cd Sistemaecn_tecnico_sanchez
-```
-
-### Paso 3: Crear una Rama para tu Cambio
-```bash
-git checkout -b mejora/nombre-de-la-mejora
-```
-
-### Paso 4: Realizar Cambios
-- Edita los archivos que necesites mejorar
-- Prueba tus cambios en el navegador
-
-### Paso 5: Commit de Cambios
-```bash
-git add .
-git commit -m "Descripción clara de qué mejoraste"
-```
-
-### Paso 6: Push a tu Fork
-```bash
-git push origin mejora/nombre-de-la-mejora
-```
-
-### Paso 7: Pull Request
-1. Ve a tu fork en GitHub
-2. Haz clic en **"Compare & pull request"**
-3. Completa la descripción y envía
+1. Fork el repositorio
+2. Clona tu fork: `git clone https://github.com/TU_USUARIO/Sistemaecn_tecnico_sanchez.git`
+3. Crea una rama: `git checkout -b mejora/tu-mejora`
+4. Realiza tus cambios y commiteа: `git commit -m "Tu mensaje"`
+5. Push: `git push origin mejora/tu-mejora`
+6. Abre un Pull Request en GitHub
 
 ---
 
