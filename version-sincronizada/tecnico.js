@@ -129,25 +129,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // función para convertir una solicitud en servicio
+  // en lugar de insertarla con costo 0, precargamos el formulario
   window.convertirASolicitud = function (index) {
     const sol = solicitudes[index];
-    servicios.push({
-      cliente: sol.cliente,
-      direccion: sol.direccion,
-      tipo: sol.tipo,
-      costo: 0,
-      pago: "",
-      urgente: sol.urgente,
-      estado: "Pendiente",
-      sumado: false
-    });
-    // GUARDAR nuevos servicios
-    localStorage.setItem('servicios', JSON.stringify(servicios));
-    // Eliminar solicitud procesada
+    // cargar valores en el formulario técnico para que el operario los complete
+    document.getElementById("cliente").value = sol.cliente;
+    document.getElementById("direccion").value = sol.direccion;
+    document.getElementById("tipo").value = sol.tipo;
+    document.getElementById("urgente").checked = sol.urgente;
+    // eliminamos la solicitud pendiente
     solicitudes.splice(index, 1);
     localStorage.setItem('solicitudes', JSON.stringify(solicitudes));
     dibujarSolicitudes();
-    dibujarTabla();
-    alert("Solicitud convertida a servicio. Completa el costo y medio de pago.");
+    alert(
+      "Solicitud cargada en el formulario técnico. Ingrese costo y medio de pago, luego pulse Agendar servicio."
+    );
   };
 });
