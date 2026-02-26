@@ -1,6 +1,6 @@
-# 🔧 Sistema de Gestión Técnica - Sanchez
+# Sistema de Gestión Técnica - Sanchez
 
-## 📋 Información Básica
+## Información Básica
 
 ### Título
 **Sistema de Gestión Técnica en Refrigeración - Sanchez**
@@ -194,19 +194,19 @@ http-server
 
 ---
 
-## 📝 Características Principales
+## Características Principales
 
-✅ **Formularios interactivos** - Validación de campos obligatorios  
-✅ **Tabla dinámica** - Agregar y eliminar registros sin recargar la página  
-✅ **Cálculos automáticos** - Costos y totales actualizados en tiempo real  
-✅ **Diseño responsivo** - Funciona perfectamente en celulares, tablets y computadoras  
-✅ **Interfaz intuitiva** - Fácil de usar para clientes y técnicos  
-✅ **Almacenamiento en memoria** - Los datos se mantienen mientras esté abierta la página  
-✅ **Estilo profesional** - Colores consistentes y animaciones suaves  
+- Formularios interactivos - Validación de campos obligatorios
+- Tabla dinámica - Agregar y eliminar registros sin recargar la página
+- Cálculos automáticos - Costos y totales actualizados en tiempo real
+- Diseño responsivo - Funciona perfectamente en celulares, tablets y computadoras
+- Interfaz intuitiva - Fácil de usar para clientes y técnicos
+- Almacenamiento en memoria - Los datos se mantienen mientras esté abierta la página
+- Estilo profesional - Colores consistentes y animaciones suaves
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Si deseas contribuir a este proyecto:
 
@@ -248,7 +248,7 @@ git push origin mejora/nombre-de-la-mejora
 
 ---
 
-## 💡 Ideas para Mejoras Futuras
+## Ideas para Mejoras Futuras
 
 - Persistencia de datos usando `localStorage` o `sessionStorage`
 - Conexión a una base de datos real (Firebase, MongoDB)
@@ -261,7 +261,7 @@ git push origin mejora/nombre-de-la-mejora
 
 ---
 
-## 📧 Contacto y Soporte
+## Contacto y Soporte
 
 Para preguntas o reportar bugs:
 - **Email**: daisipino@example.com
@@ -270,18 +270,18 @@ Para preguntas o reportar bugs:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue creado con fines educativos como parte de la Práctica Profesionalizante del Instituto de Educación Superior (IES). Puedes usarlo libremente para aprender y mejorar.
 
 ---
 
-## 🎓 Desarrollo Académico
+## Desarrollo Académico
 
 - **Institución**: Instituto de Educación Superior (IES)
 - **Programa**: Práctica Profesionalizante - PRIMER AÑO
 - **Consignas**: HTML5, CSS3, JavaScript Vanilla
-- **Cumplimiento**: ✅ 100% - Todos los requisitos incluidos
+- **Cumplimiento**: 100% - Todos los requisitos incluidos
 
 ---
 
