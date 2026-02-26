@@ -58,6 +58,30 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* tipografía para contenidos de secciones (servicio técnico) */
+.seccion h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.seccion p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+}
+
+.seccion p b {
+  font-weight: 700;
+  color: #222;
+  font-size: 17px;
+}
+
 /* portada */
 .portada {
   width: 100%;
