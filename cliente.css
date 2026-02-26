@@ -179,6 +179,34 @@ select:hover {
   border-color: var(--color-principal);
 }
 
+/* ajustes responsivos para móviles */
+@media (max-width: 768px) {
+  /* formulario en una sola columna para pantallas pequeñas */
+  .formulario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* tarjetas de servicios apiladas en lugar de una fila */
+  .servicios {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* reducir tamaño del título de la empresa para que no se rompa */
+  .empresa {
+    font-size: 60px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  /* hacer la portada más alta en pantallas pequeñas para que no quede comprimida */
+  .portada {
+    height: 300px;
+  }
+}
+
 /* opciones checkbox */
 .opciones {
   margin-top: 30px;
